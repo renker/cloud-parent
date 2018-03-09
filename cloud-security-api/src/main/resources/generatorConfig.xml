@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+		"-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry location="E:\maven-3.1.1\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar" />
+	<classPathEntry location="./target/classes" />
+	<context id="xplat-bd" defaultModelType="flat">
+		<plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" />
+		<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"></plugin>
+		<plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin">
+			<property name="suppressJavaInterface" value="false" />
+		</plugin>
+		<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin>
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/cloud" userId="root" password="root" />
+		<javaModelGenerator targetPackage="com.renker.cloud.security.model" targetProject="D:\mybatisGeneratorFile">
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="com.renker.cloud.security.mapper" targetProject="D:\mybatisGeneratorFile" />
+		<javaClientGenerator targetPackage="com.renker.cloud.security.mapper" targetProject="D:\mybatisGeneratorFile" type="XMLMAPPER">
+		   <!-- <property name="rootInterface" value="com.ct.base.mapper.BaseMapper" /> -->
+		</javaClientGenerator>
+		
+		<table tableName="cloud_user" domainObjectName="User" alias="tb" 
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table>
+		
+		<!-- <table tableName="fairyland_resource" domainObjectName="Resource" alias="tb"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table> -->
+		
+		<!-- <table tableName="fairyland_permissions" domainObjectName="Permissions" alias="tb"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table> -->
+		
+		<!-- <table tableName="fairyland_role" domainObjectName="Role" alias="tb"
+		    enableCountByExample="false" 
+		    enableSelectByExample="false" 
+		    enableUpdateByExample="false" 
+		    enableDeleteByExample="false">
+		</table> -->
+		
+	</context>
+</generatorConfiguration>
