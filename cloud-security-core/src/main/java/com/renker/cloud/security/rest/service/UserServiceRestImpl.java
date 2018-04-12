@@ -2,12 +2,14 @@ package com.renker.cloud.security.rest.service;
 
 import javax.annotation.Resource;
 
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.renker.cloud.security.model.User;
 import com.renker.cloud.security.service.IUserService;
 
 @RestController
+@RequestMapping("security/userRestService")
 public class UserServiceRestImpl implements IUserRestService{
 	
 	@Resource

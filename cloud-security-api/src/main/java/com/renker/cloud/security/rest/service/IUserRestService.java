@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.renker.cloud.security.model.User;
 
-@RequestMapping("userService")
+@RequestMapping("security/userRestService")
 public interface IUserRestService {
 	
 	@RequestMapping(value="save",method=RequestMethod.POST)
@@ -22,5 +22,5 @@ public interface IUserRestService {
 	int updateByPrimaryKeySelective(User user);
 	
 	@RequestMapping(value="findByAccountAndPassword",method=RequestMethod.GET)
-	User findByAccountAndPassword(String account,String password);
+	User findByAccountAndPassword(@RequestParam("account")String account,@RequestParam("password")String password);
 }
