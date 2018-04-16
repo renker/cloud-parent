@@ -4,13 +4,19 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix="shiro")
 public class ShiroProperties {
-	
+	/** 登陆页url */
 	private String loginUrl;
+	/** 登陆url */
 	private String doLoginUrl;
+	/** 登出url */
 	private String logoutUrl;
+	/** 登陆成功后跳转的url */
 	private String successUrl;
+	/** 登陆成功后跳转的页面View */
 	private String successView;
+	/** 鉴权失败后提示页面url */
 	private String unauthorizedUrl;
+	/** 鉴权失败后提示页面view */
 	private String unauthorizedView;
 	private String filterChainDefinitions;
 	private String [] filters;
