@@ -19,10 +19,15 @@
   		<artifactId>spring-boot-starter-web</artifactId>
   	</dependency>
   
-  	<!-- <dependency>
+  	<dependency>
   		<groupId>com.renker.cloud</groupId>
   		<artifactId>cloud-security-api</artifactId>
-  	</dependency> -->
+  	</dependency>
+  	
+  	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-feign</artifactId>
+	</dependency>
 
   	<dependency>
   		<groupId>com.renker.cloud</groupId>

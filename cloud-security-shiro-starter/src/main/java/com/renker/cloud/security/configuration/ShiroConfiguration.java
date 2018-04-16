@@ -22,6 +22,7 @@ import org.crazycake.shiro.RedisManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
@@ -33,7 +34,8 @@ import com.renker.cloud.security.configuration.session.DefaultCachingSessionDao;
 
 @Configuration
 @EnableAspectJAutoProxy(proxyTargetClass=true)
-@EnableConfigurationProperties({ShiroProperties.class,RedisProperties.class})	
+@EnableConfigurationProperties({ShiroProperties.class,RedisProperties.class})
+@EnableFeignClients
 public class ShiroConfiguration {
 	private Logger log = LoggerFactory.getLogger(ShiroConfiguration.class);
 	
