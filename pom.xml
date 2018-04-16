@@ -20,6 +20,7 @@
   	<module>cloud-job-quartz-starter</module>
   	<module>cloud-data-mybatis-starter</module>
   	<module>cloud-utils</module>
+  	<module>cloud-common</module>
   </modules>
   
   <properties>
@@ -48,6 +49,12 @@
   		<dependency>
   			<groupId>com.renker.cloud</groupId>
     		<artifactId>cloud-security-api</artifactId>
+    		<version>${project.version}</version>
+  		</dependency>
+  		
+  		<dependency>
+  			<groupId>com.renker.cloud</groupId>
+    		<artifactId>cloud-common</artifactId>
     		<version>${project.version}</version>
   		</dependency>
   		
