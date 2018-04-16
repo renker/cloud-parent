@@ -22,7 +22,7 @@
   		<groupId>com.renker.cloud</groupId>
   		<artifactId>cloud-data-mybatis-starter</artifactId>
   	</dependency>
-  	
+
   </dependencies>
   
   <build>
